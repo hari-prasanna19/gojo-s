@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <title>Products</title>
+</head>
+<body>
+     <nav class="bg-gradient-to-r from-black via-red-900 to-black text-gray-300 p-2 flex items-center justify-between shadow-xl sticky top-0 z-10 relative">
+
+    <!-- Both icons wrapped together, left side on mobile -->
+    <div class="flex items-center gap-4 ml-5 md:hidden">
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="32"
+            height="32" class="cursor-pointer text-gray-300">
+            <path fill-rule="evenodd"
+                d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+                clip-rule="evenodd" />
+        </svg>
+
+        <svg id="carticon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            width="32" height="32" class="cursor-pointer text-gray-300">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+        </svg>
+        <div  id="items" class="relative hidden">
+                <div class="absolute top-5 rigth-4 -translate-y-1/3 bg-black text-gray-300 p-2 text-sm ">
+                    <p>Your cart is empty !</p>
+                </div>
+             </div>
+    </div>
+
+    <a href="index.html">
+        <h1 class="bg-gradient-to-r from-red-500 via-white to-red-500 bg-clip-text text-transparent font-extrabold text-5xl tracking-wide cursor-pointer">
+            GoJo's
+        </h1>
+    </a>
+
+    <ul class="gap-5 text-gray-300 marker:text-red-500 hidden md:flex">
+        <li><a class="cursor-pointer hover:text-red-500 transition-colors duration-300 font-medium" href="index.html">Home</a></li>
+        <li><a class="cursor-pointer hover:text-red-500 transition-colors duration-300 font-medium" href="products.html">Products</a></li>
+        <li><a class="cursor-pointer hover:text-red-500 transition-colors duration-300 font-medium" href="contact.html">Contact us</a></li>
+    </ul>
+</nav>
+     <!-- Sidenav -->
+    <section id="sidenav"
+        class="bg-gradient-to-r from-black via-red-900 to-black text-gray-300 fixed z-20 top-0 transition-all duration-1000"
+        style="width:50%; height:100vh; left:-50%;">
+        <div class="p-8 text-right">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col items-center gap-10 text-gray-500">
+            <li>
+                <a class="cursor-pointer hover:text-red-500 transition-colors duration-300 font-medium"
+                    href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="cursor-pointer hover:text-red-500 transition-colors duration-300 font-medium"
+                    href="products.html">Products</a>
+            </li>
+            <li>
+                <a class="cursor-pointer hover:text-red-500 transition-colors duration-300 font-medium"
+                    href="signup.html">Sign Up</a>
+            </li>
+           
+        </ul>
+    </section>
+    
+    <!-- Products section -->
+     <section class="text-center p-5 bg-black text-gray-300">
+        <div class="text-center p-5 bg-gradient-to-r from-black via-red-900 to-black text-gray-300"">
+            <h1 class="font-semibold text-2xl mb-3 md:text-3xl">Search Your Drip here !!</h1>
+        <input type="text" id="search" class="border border-red-700 border-solid  mb-3 outline-none p-3 hover:border-red-700 transparent text-gray-300" style="width:65%"><br>
+        </div>
+        <div id="product-container" class="grid grid-cols-2 md:grid-cols-4 mt-8 gap-5">
+            <div>
+                <img src="./images/best seller1.png" alt="image" class="inline hover:shadow-xl transform transition duration-0.5s ease-linear hover:-translate-y-2">
+                <p>Denim Jackets</p>
+                <p>Rs.555</p>
+            </div>
+            <div>
+                <img src="./images/best seller2.png" alt="image" class="inline hover:shadow-xl transform transition duration-0.5s ease-linear hover:-translate-y-2">
+                <p>Printed Hoodies</p>
+                <p>Rs.999</p>
+            </div>
+            <div>
+                <img src="./images/best seller3.png" alt="image" class="inline hover:shadow-xl transform transition duration-0.5s ease-linear hover:-translate-y-2">
+                <p>Hoodies</p>
+                <p>Rs.333</p>
+            </div>
+            <div>
+                <img src="./images/best seller4.png" alt="image" class="inline hover:shadow-xl transform transition duration-0.5s ease-linear hover:-translate-y-2">
+                <p>LE Hoodies</p>
+                <p>Rs.666</p>
+            </div>
+            <div>
+                <img src="./images/mw-1.png" alt="image" class="inline hover:shadow-xl transform transition duration-0.5s ease-linear hover:-translate-y-2">
+                <p>F1 Jackets</p>
+                <p>Rs.999</p>
+            </div>
+            <div>
+                <img src="./images/mw-2.png" alt="image" class="inline hover:shadow-xl transform transition duration-0.5s ease-linear hover:-translate-y-2">
+                <p>Varsity Jackets</p>
+                <p>Rs.666</p>
+            </div>
+            <div>
+                <img src="./images/mw-3.png" alt="image" class="inline hover:shadow-xl transform transition duration-0.5s ease-linear hover:-translate-y-2">
+                <p>Bomber Jackets</p>
+                <p>Rs.555</p>
+            </div>
+            <div>
+                <img src="./images/mw-4.png" alt="image" class="inline hover:shadow-xl transform transition duration-0.5s ease-linear hover:-translate-y-2">
+                <p>Leather Jackets</p>
+                <p>Rs.666</p>
+            </div>
+        </div>
+     </section>
+     <!-- footer -->
+      <section class="text-center p-5 bg-gradient-to-r from-black via-red-900 to-black text-gray-300">
+        <h1
+            class="bg-gradient-to-r from-red-500 via-white to-red-500 bg-clip-text p-3 text-transparent font-extrabold text-4xl md:text-5xl tracking-wide">
+            GoJo's</h1>
+        <p class="text-gray-300 mb-2">There is Neither Beginning Nor End</p>
+        <p class="text-red-500 font-bold  tracking-widest text-sm mb-3">ONLY US</p>
+        <p class="text-gray-300 mb-3">@ 2026 GoJo's.com</p>
+    </section>
+    <!-- Scroll to top button - goes here, near end of body -->
+    <button id="scrollTopBtn" class="fixed bottom-8 right-8 bg-black hover:bg-gray-800 border border-red-600 w-14 h-14 flex items-center justify-center rounded transition-all duration-300 hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-red-500" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+    <script src="product.js"></script>
+</body>
+</html>
